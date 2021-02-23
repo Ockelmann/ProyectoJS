@@ -1,0 +1,148 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menuyfooter.css">
+    <link rel="stylesheet" href="css/contactenos.css">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <title>Contáctanos|CursosAlgoritmos</title>
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="img/iconos/menu.png" alt=""></label>
+    <nav class="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="contactenos.html">Contáctanos</a></li>
+            <li><a href="plan.html">Iniciar mi plan</a></li>
+        </ul>
+    </nav>        
+</header>
+
+    <div class="contact_form">
+
+        <div class="formulario">      
+          <h1 class="formulario">Formulario de contacto</h1>
+            <h3>Escríbenos y en breve los pondremos en contacto contigo</h3>
+    
+    
+              <form action="submeter-formulario.php" method="post">       
+    
+                
+                    <p>
+                      <label for="nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_nombre" id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                    </p>
+                  
+                    <p>
+                      <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="email" name="introducir_email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                    </p>
+                
+                    <p>
+                      <label for="telefone" class="colocar_telefono">Teléfono
+                      </label>
+                        <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                    </p>        
+                  
+                    <p>
+                      <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                      </label>
+                        <input type="text" name="introducir_asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>    
+                  
+                    <p>
+                      <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                      </label>                     
+                                        <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio" ></textarea> 
+                                    </p>                    
+                  
+                    <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+    
+                    <p class="aviso">
+                      <span class="obligatorio"> * </span>los campos son obligatorios.
+                    </p>          
+                
+              </form>
+        </div>  
+      </div>
+
+    <footer>
+       
+        <div class="container-footer-all">
+         
+             <div class="container-body">
+ 
+                 <div class="colum1">
+                     <h1>Mas informacion de la compañia</h1>
+ 
+                     <p>Esta compañia se dedica a impartir Cursos en Linea de Algoritmos utilizando PSeInt</p>
+ 
+                 </div>
+ 
+                 <div class="colum2">
+ 
+                     <h1>Redes Sociales</h1>
+ 
+                     <div class="row">
+                         <img src="img/iconos/facebook.png">
+                         <label>Siguenos en Facebook</label>
+                     </div>
+                     <div class="row">
+                         <img src="img/iconos/twiter.png">
+                         <label>Siguenos en Twitter</label>
+                     </div>
+                     <div class="row">
+                         <img src="img/iconos/youtube.png">
+                         <label>Siguenos en YouTube</label>
+                     </div>
+                 </div>
+ 
+                 <div class="colum3">
+ 
+                     <h1>Informacion Contactos</h1>
+ 
+                     <div class="row2">
+                         <img src="img/iconos/direccion.png">
+                         <label>8-56 zona 8 Torre Gerencial, Guatemala</label>
+                     </div>
+ 
+                     <div class="row2">
+                         <img src="img/iconos/telefono.png">
+                         <label>+502-8259-3956</label>
+                     </div>
+ 
+                     <div class="row2">
+                         <img src="img/iconos/correo.png">
+                          <label>CursosAlgoritmos@gmail.com</label>
+                     </div>
+ 
+                 </div>
+ 
+             </div>
+         
+         </div>
+         
+         <div class="container-footer">
+                <div class="footer">
+                     <div class="copyright">
+                         © 2017 Todos los Derechos Reservados | <a href="">CursosAlgoritmos</a>
+                     </div>
+ 
+                     <div class="information">
+                         <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                     </div>
+                 </div>
+ 
+             </div>
+         
+     </footer>
+</body>
+</html>
