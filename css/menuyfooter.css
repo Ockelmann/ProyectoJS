@@ -11,6 +11,7 @@ body{
 header{
     width: 100%;
     background: #4E94AB;
+    align-items: center;
 }
 
 #btn-menu{
@@ -22,7 +23,7 @@ header label{
     width: 30px;
     height: 30px;
     padding: 10px;
-    border-right: 1px solid #ffffff;
+
 }
 
 header label:hover{
@@ -53,58 +54,53 @@ header label:hover{
     text-decoration: none;
 }
 
-@media (max-width:644px){
-    header label{
-        display: block;
-    }
-
-    .menu {
-        position: absolute;
-        background: #4E94AB;
-        width: 70%;
-        margin-left: -70%;
-    }
-
-    .menu ul{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .menu li{
-        border-top: 1px solid #ffffff;
-    }
-
-    #btn-menu:checked ~ .menu{
-        margin: 0;
-    }
+.menu ul ul{
+    display: none;
+    background: #4E94AB;
 }
 
 
+.menu ul li:hover ul{
+    display: block;
+    position: absolute;
+}
 
-@media (max-width:414px){
+
+@media (max-width:768px){
     header label{
         display: block;
     }
 
     .menu {
         position: absolute;
-        background: #4E94AB;
+        top: 50px;
+        left: 0;
         width: 100%;
-        margin-left: -100%;
-    }
-
-    .menu ul{
-        flex-direction: column;
+        transform: translateX(-100%);
+        transition: all 0.3s;
         text-align: center;
     }
 
-    .menu li{
-        border-top: 1px solid #ffffff;
+    .menu ul{
+        display: block;
+        background: #4E94AB ;
+    }
+
+    .menu ul li:hover ul{
+       display: none;
+       position: static;
+    }
+
+    .menu a span{
+        position: absolute;
+        right: 5px;
     }
 
     #btn-menu:checked ~ .menu{
-        margin: 0;
+        transform: translateX(0%); 
     }
+
+    
 }
 /*-----------------------------------------------------------Footer Flexible-------------------------------------------------------*/
 footer{
