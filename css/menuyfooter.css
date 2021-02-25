@@ -11,9 +11,9 @@
     background: #4E94AB;
     color: #FFF;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
   }
-  
+ 
   #btn-menu {
     display: none;
   }
@@ -64,20 +64,25 @@
       padding-top: 16px;
       padding-right: 16px;
       transition: all 0.4s ease;
+      
     }
     
     .menu {
       position: absolute;
       top: 64px;
       left: 0;
-      width: 70%;
+      width: 50%;
       transform: translateX(-100%);
       transition: all 0.3s;
+     
+     
     }
     
     .menu ul {
       flex-direction: column;
       display: block;
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px 
     }
     
     .menu ul li:hover ul {
