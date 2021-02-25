@@ -1,107 +1,101 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     font-family: sans-serif;
-}
+  }
+  /*--------------------------------------------Menu Flexible------------------------------------------------------------*/
 
-/*------------------------------------------------------------Menu Flexible------------------------------------------------------------*/
-header{
-    width: 100%;
+  header {
+    height: 64px;
     background: #4E94AB;
-    align-items: center;
-}
-
-#btn-menu{
-    display: none;
-}
-
-header label{
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 10px;
-
-}
-
-header label:hover{
-    cursor: pointer;
-    background: rgba(255, 255, 255, 0.712);
-}
-
-.menu ul{
-    margin: 0;
-    list-style: none;
-    padding: 0;
+    color: #FFF;
     display: flex;
     justify-content: flex-end;
-}
-
-.menu li:hover{
-    background:  rgba(255, 255, 255, 0.712);
-}
-
-.menu a:hover{
-    color: #000000;
-}
-
-.menu li a{
+  }
+  
+  #btn-menu {
+    display: none;
+  }
+  
+  header label {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .menu ul {
+    background: #4E94AB;
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu ul ul {
+    display: none;
+  }
+  
+  .menu a {
     display: block;
     padding: 15px 20px;
-    color: #ffffff;
+    color: #FFF;
     text-decoration: none;
-}
-
-.menu ul ul{
-    display: none;
-    background: #4E94AB;
-}
-
-
-.menu ul li:hover ul{
+    line-height: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+  }
+  
+  .menu a:hover {
+    background: #2C3E50;
+  }
+  
+  .menu a i {
+    margin-left: 10px;
+  }
+  
+  .menu ul li:hover ul {
+    transition: all 0.3s ease;
     display: block;
     position: absolute;
-}
-
-
-@media (max-width:768px){
-    header label{
-        display: block;
+  }
+  
+  @media (max-width: 768px) {
+    header label {
+      display: block;
+      padding-top: 16px;
+      padding-right: 16px;
+      transition: all 0.4s ease;
     }
-
-    .menu {
-        position: absolute;
-        top: 50px;
-        left: 0;
-        width: 100%;
-        transform: translateX(-100%);
-        transition: all 0.3s;
-        text-align: center;
-    }
-
-    .menu ul{
-        display: block;
-        background: #4E94AB ;
-    }
-
-    .menu ul li:hover ul{
-       display: none;
-       position: static;
-    }
-
-    .menu a span{
-        position: absolute;
-        right: 5px;
-    }
-
-    #btn-menu:checked ~ .menu{
-        transform: translateX(0%); 
-    }
-
     
-}
+    .menu {
+      position: absolute;
+      top: 64px;
+      left: 0;
+      width: 70%;
+      transform: translateX(-100%);
+      transition: all 0.3s;
+    }
+    
+    .menu ul {
+      flex-direction: column;
+      display: block;
+    }
+    
+    .menu ul li:hover ul {
+      display: none;
+      position: static;
+    }
+    
+    .menu a i {
+      position: absolute;
+      right: 16px;
+      line-height: 32px;
+    }
+    
+    #btn-menu:checked ~ .menu {
+      transform: translateX(0%);
+    }
+    
+  }
 /*-----------------------------------------------------------Footer Flexible-------------------------------------------------------*/
 footer{
     width: 100%;
