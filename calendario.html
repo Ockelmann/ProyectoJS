@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/menuyfooter.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/fontello.css">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/calendario.css">
+
+    <title>Inicio</title>
+</head>
+
+<body>
+    <header class="header">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu" class="icon-menu"></label>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li class="submenu">
+                    <a>Contenido <span class="icon-down-open"></span></a>
+                        <ul>
+                            <li>
+                                <a href="cursos.html">Cursos - 2021</a>
+                            </li>
+                            <li>
+                                <a href="calendario.html">Calendario</a>
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="contactenos.html">Contáctanos</a>
+                </li>
+                <li>
+                    <a href="plan.html">Iniciar mi plan</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <h1>Calendario Actividades</h1>
+<br/><br/>
+<div id="calendario">
+  <div id="anterior" onclick="mesantes()"></div>
+  <div id="posterior" onclick="mesdespues()"></div>
+  <h2 id="titulos"></h2>
+  <table id="diasc">
+    <tr id="fila0"><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr>
+    <tr id="fila1"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr id="fila2"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr id="fila3"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr id="fila4"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr id="fila5"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+    <tr id="fila6"><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+  </table>
+  <div id="fechaactual"><i onclick="actualizar()">HOY: </i></div>
+  <div id="buscafecha">
+    <form action="#" name="buscar">
+      <p>Buscar ... MES
+        <select name="buscames">
+          <option value="0">Enero</option>
+          <option value="1">Febrero</option>
+          <option value="2">Marzo</option>
+          <option value="3">Abril</option>
+          <option value="4">Mayo</option>
+          <option value="5">Junio</option>
+          <option value="6">Julio</option>
+          <option value="7">Agosto</option>
+          <option value="8">Septiembre</option>
+          <option value="9">Octubre</option>
+          <option value="10">Noviembre</option>
+          <option value="11">Diciembre</option>
+        </select>
+      ... AÑO ...
+        <input type="text" name="buscaanno" maxlength="4" size="4" />
+      ... 
+        <input type="button" value="BUSCAR" onclick="mifecha()" />
+      </p>
+    </form>
+  </div>
+  </div>
+
+   <footer>
+        
+       
+        <div class="container-footer-all">
+         
+             <div class="container-body">
+ 
+                 <div class="colum1">
+                     <h1>Mas informacion de la compañia</h1>
+ 
+                     <p>Esta compañia se dedica a impartir Cursos en Linea de Algoritmos utilizando PSeInt</p>
+ 
+                 </div>
+ 
+                 <div class="colum2">
+ 
+                     <h1>Redes Sociales</h1>
+ 
+                     <div class="row">
+                         <img src="img/iconos/facebook.png">
+                         <label>Siguenos en Facebook</label>
+                     </div>
+                     <div class="row">
+                         <img src="img/iconos/twiter.png">
+                         <label>Siguenos en Twitter</label>
+                     </div>
+                     <div class="row">
+                         <img src="img/iconos/youtube.png">
+                         <label>Siguenos en YouTube</label>
+                     </div>
+                 </div>
+ 
+                 <div class="colum3">
+ 
+                     <h1>Informacion Contactos</h1>
+ 
+                     <div class="row2">
+                         <img src="img/iconos/direccion.png">
+                         <label>8-56 zona 8 Torre Gerencial, Guatemala</label>
+                     </div>
+ 
+                     <div class="row2">
+                         <img src="img/iconos/telefono.png">
+                         <label>+502-8259-3956</label>
+                     </div>
+ 
+                     <div class="row2">
+                         <img src="img/iconos/correo.png">
+                          <label>CursosAlgoritmos@gmail.com</label>
+                     </div>
+ 
+                 </div>
+ 
+             </div>
+         
+         </div>
+         
+         <div class="container-footer">
+                <div class="footer">
+                     <div class="copyright">
+                         © 2017 Todos los Derechos Reservados | <a href="">CursosAlgoritmos</a>
+                     </div>
+ 
+                     <div class="information">
+                         <a href="">Informacion Compañia</a> | <a href="">Privacion y Politica</a> | <a href="">Terminos y Condiciones</a>
+                     </div>
+                 </div>
+ 
+             </div>
+         
+     </footer>
+
+     <script src="js/menu.js"></script>
+     <script src="js/calendario.js"></script>
+</body>
+</html>
