@@ -91,7 +91,7 @@ transition: opacity 0.5s linear 1s;
     cursor: pointer;
 	vertical-align: top;
 	border-radius:25px;
-}px;
+}
 
 .overlay {
 	position: fixed;
