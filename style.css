@@ -52,3 +52,11 @@
 .titulo_dos{
   font-size: 25px;
 }
+iframe{
+  display: none;
+}
+
+audio{
+  display: none;
+}
+ 
