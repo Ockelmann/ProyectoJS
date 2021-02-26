@@ -30,7 +30,10 @@ button {
   font-family: inherit;
   font-size: 100%;
 }
-
+label
+{
+  color:black;
+}
 button,
 label {
   cursor: pointer;
