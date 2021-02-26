@@ -1,6 +1,12 @@
 *{
   font-family: Arial, Helvetica, sans-serif;
 }
+body
+{
+ background: url("https://st3.depositphotos.com/4189501/32509/v/600/depositphotos_325097206-stock-illustration-old-retro-video-game-background.jpg");
+    background-size: auto;
+background-size: contain; 
+}
 
 .square {
   width: 200px;
