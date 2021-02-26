@@ -78,11 +78,11 @@ function escribirdias() {
                     }
                  //dias restantes del mes en gris
                  if (mimes!=mescal) { 
-                    celda.style.color="#a0babc";
+                    celda.style.color="#FFFFFE";
                     }
                  //destacar la fecha actual
                  if (mimes==meshoy && midia==diahoy && mianno==annohoy ) { 
-                    celda.style.backgroundColor="#f0b19e";
+                    celda.style.backgroundColor="#FFFFFE";
                     celda.innerHTML="<cite title='Fecha Actual'>"+midia+"</cite>";
                     }
                  //pasar al siguiente día
