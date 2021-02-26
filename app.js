@@ -19,13 +19,7 @@ function randomSquare() {
 }
 
 
-function fondo(){
-  var sonido = document.createElement("iframe");
-	sonido.setAttribute("src","sounds/theme.mp3");
-	document.body.appendChild(sonido);
-	 	
 
-}
 
 function sonarPajaros(hitPosition){
 	var sonido = document.createElement("iframe");
